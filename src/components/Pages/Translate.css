@@ -1,0 +1,226 @@
+
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #5e9ad5; /* Wanderly brand color */
+    color: #f1f2f8;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Container */
+  .container {
+    min-width: 700px;
+    width: 100%;
+    padding: 30px;
+    background: #c8a7ee; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Text Input */
+  .text-input textarea {
+    background: #91b0e5;
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .text-input textarea::placeholder {
+    color: #aaa; /* Lighter placeholder text */
+  }
+  
+  .text-input textarea:focus {
+    border-color: #003366; /* Wanderly brand color */
+  }
+  
+  /* Controls */
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    background-color: #003366; /* Wanderly brand color */
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #005699; /* Darker shade of brand color on hover */
+  }
+  
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #67559d;
+  }
+  
+  .container {
+    min-width: 700px;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .wrapper {
+    border-radius: 5px;
+    border: 1px solid #4b3884;
+  }
+  
+  .wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid #4b3884;
+  }
+  
+  .text-input .to-text {
+    border-radius: 0px;
+    border-left: 1px solid #4b3884;
+  }
+  
+  .text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .text-input textarea::placeholder {
+    color: #4b3884;
+  }
+  
+  .text-input textarea:focus {
+    border-color: #4b3884;
+  }
+  
+  .controls,
+  li,
+  .icons,
+  .icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .controls {
+    list-style: none;
+    padding: 12px 15px;
+  }
+  
+  .controls .row .icons {
+    width: 38%;
+  }
+  
+  .controls .row .icons i {
+    width: 50px;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+  
+  .controls .row.from .icons {
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .controls .row.to .icons {
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .controls .row select {
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    padding-left: 5px;
+  }
+  
+  .controls .row select:focus {
+    border-color: #ffc107;
+  }
+  
+  .controls .row select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .controls .row select::-webkit-scrollbar-track {
+    background: #af1c1c;
+  }
+  
+  .controls .row select::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .controls .exchange {
+    color: #adadad;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls i:active {
+    transform: scale(0.9);
+  }
+  
+  .container button {
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border: none;
+    color: #f6f6f7;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #4b3884;
+    transition: background 0.3s ease;
+  }
+  
+  .container button:hover {
+    background: #4b3884;
+  }
+  

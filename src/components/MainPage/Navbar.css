@@ -1,0 +1,263 @@
+/* Navbar.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar {
+  overflow: hidden;
+}
+
+header {
+  background-image: url('https://wallpaperaccess.com/full/1881717.jpg');
+  color: #0f0202;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  padding: 40px 0; /* Increased padding for bigger header size */
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content img {
+  width: 50px; /* Adjust icon size as needed */
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.header-content h1 {
+  font-size: 50px; /* Adjust header text size */
+  margin: 0; /* Remove default margin */
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); /* Background color for links with transparency */
+}
+
+nav ul li a:hover {
+  color: #666;
+  transform: scale(1.1);
+  background-color: rgba(221, 221, 221, 0.5); /* Background color for links on hover with transparency */
+}
+
+nav ul li a {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background-image: url('https://wallpaperaccess.com/full/1881717.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #0e0d0d; /* White text color */
+  text-align: center;
+  padding: 100px;
+  font-family: Arial, sans-serif; /* Use a common sans-serif font for better readability */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Adjust the heading size as needed */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Adjust the paragraph size as needed */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Apply a semi-transparent black overlay to improve readability of text over the background image */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+  z-index: -1;
+}
+
+.features {
+  background-image: url('https://th.bing.com/th/id/R.c4dc9987b344fc4c2340de9b0722811e?rik=rzqa5tnkGrP6Wg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fHD-World-Travel-Desktop-Background.jpg&ehk=60mu9TPugnh12tUiz6SyEe%2brVNlWp1FaEu5OMf6oIig%3d&risl=&pid=ImgRaw&r=0');
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.feature-container {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.feature-container:hover {
+  transform: translateY(-5px) scale(1.05); /* Apply scale for a slight zoom effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+.feature-container img {
+  width: 100%;
+  border-radius: 10px; /* Rounded corners for the image */
+  transition: transform 0.3s ease; /* Apply transition for smooth zoom effect */
+}
+
+.feature-container:hover img {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.feature-content {
+  padding: 15px; /* Padding for content */
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+.feature-container:hover {
+  transform: translateY(-5px) scale(1.05); /* Apply scale for a slight zoom effect */
+}
+
+.feature-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+.contact-form-container {
+  padding: 50px;
+  text-align: left;
+}
+
+.contact-form-content {
+  display: flex;
+  justify-content: space-between; /* Put space between the form and image */
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 50px;
+}
+
+.contact-form-image img {
+  width: 2px;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.contact-form-image img:hover {
+  transform: scale(1.1);
+}
+
+
+.contact-form-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+}
+
+.contact-form-image img {
+  width: 200px;
+  height: auto; /* Ensure image maintains aspect ratio */
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Apply transition for hover effect */
+}
+
+.contact-form-image img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.contact-form {
+  max-width: 5000px;
+  margin-left: 20px; /* Add space between image and form */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #050505;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* Apply transition for border color change */
+}
+
+.form-control:focus {
+  border-color: #333; /* Change border color on focus */
+}
+
+textarea.form-control {
+  resize: horizontal;
+}
+
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
